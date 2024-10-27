@@ -8,8 +8,9 @@ datasource db {
 }
 
 model contribution {
-  id      String @id @default(auto()) @map("_id") @db.ObjectId
+  id      String  @id @default(auto()) @map("_id") @db.ObjectId
   Village String
+  id_     String? @map("id")
   inr     Int
   name    String
 }
